@@ -1,6 +1,6 @@
 package com.example.oyerickshawratingservice.Util;
 
-import com.example.oyerickshawratingservice.Rating;
+import com.example.oyerickshawratingservice.entity.Rating;
 import com.example.oyerickshawratingservice.dto.RatingRequest;
 import com.example.oyerickshawratingservice.dto.RatingType;
 

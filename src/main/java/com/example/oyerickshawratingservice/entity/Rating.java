@@ -1,4 +1,4 @@
-package com.example.oyerickshawratingservice;
+package com.example.oyerickshawratingservice.entity;
 
 import com.example.oyerickshawratingservice.dto.RatingType;
 import lombok.Data;

@@ -1,6 +1,6 @@
 package com.example.oyerickshawratingservice.common;
 
-import com.example.oyerickshawratingservice.Rating;
+import com.example.oyerickshawratingservice.entity.Rating;
 import com.example.oyerickshawratingservice.Util.ConverterUtil;
 import com.example.oyerickshawratingservice.dto.RatingDTO;
 import com.example.oyerickshawratingservice.dto.RatingRequest;

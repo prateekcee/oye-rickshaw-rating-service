@@ -1,6 +1,7 @@
 package com.example.oyerickshawratingservice;
 
 import com.example.oyerickshawratingservice.Util.RatingObjectFactory;
+import com.example.oyerickshawratingservice.entity.Rating;
 import com.example.oyerickshawratingservice.repository.RatingRepository;
 import org.junit.After;
 import org.junit.Before;

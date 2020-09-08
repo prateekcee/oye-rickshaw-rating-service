@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "828cb11b-163d-4884-ac51-30499343cc1c",
+		"name": "Rating Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add rating",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "to add the rating"
+			},
+			"response": []
+		},
+		{
+			"name": "Get ratings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "get aggregated ratings for a passenger"
+			},
+			"response": []
+		},
+		{
+			"name": "Get ratings driver ( same api but different params)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "ratings that the drivers see of themselves\r\n"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

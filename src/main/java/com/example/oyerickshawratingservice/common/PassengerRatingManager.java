@@ -27,7 +27,7 @@ public class PassengerRatingManager extends RatingManager {
                 .findAllByRatingTypeAndObjectId(RatingType.PASSENGER, ratedObjectId)
                 .stream()
                 .map(r-> ConverterUtil.copyProperties(r,RatingDTO.class))
-                .sorted(Comparator.comparing(RatingDTO::getCreatedOn))
+                .sorted(Comparator.comparing(RatingDTO::getCreatedOn).reversed())
                 .collect(Collectors.toList()));
 
         return ratingsResponse;

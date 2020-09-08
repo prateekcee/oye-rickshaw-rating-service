@@ -29,7 +29,7 @@ public class RideRatingManager extends RatingManager {
                 .findAllByRatingTypeAndObjectId(RatingType.RIDE, ratedObjectId)
                 .stream()
                 .map(r-> ConverterUtil.copyProperties(r,RatingDTO.class))
-                .sorted(Comparator.comparing(RatingDTO::getCreatedOn))
+                .sorted(Comparator.comparing(RatingDTO::getCreatedOn).reversed())
                 .collect(Collectors.toList()));
 
         return ratingsResponse;

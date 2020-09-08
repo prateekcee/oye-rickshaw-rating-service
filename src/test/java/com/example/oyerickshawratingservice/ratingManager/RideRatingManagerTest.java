@@ -12,6 +12,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 import static com.example.oyerickshawratingservice.Util.RatingObjectFactory.OBJECT_ID;
@@ -36,8 +37,11 @@ public class RideRatingManagerTest {
 
         Rating rating = RatingObjectFactory.dummyRating(RIDE);
 
+        Rating rating1 = RatingObjectFactory.dummyRating(RIDE);
+        rating1.setCreatedOn(Timestamp.valueOf(rating.getCreatedOn().toLocalDateTime().plusDays(3)));
+
         when(ratingRepository.findAllByRatingTypeAndObjectId(any(),anyString())).
-                thenReturn(newArrayList(rating));
+                thenReturn(newArrayList(rating, rating1));
 
         RatingsResponse ratingsResponse = rideRatingManager.getAllRatings(OBJECT_ID);
 
@@ -46,8 +50,9 @@ public class RideRatingManagerTest {
 
         verify(ratingRepository,times(1)).findAllByRatingTypeAndObjectId(RIDE,OBJECT_ID);
 
-        assertThat(ratingDTOList.size()).isEqualTo(1);
-        assertThat(ratingDTOList.get(0)).isEqualToComparingFieldByField(rating);
+        assertThat(ratingDTOList.size()).isEqualTo(2);
+        assertThat(ratingDTOList.get(0)).isEqualToComparingFieldByField(rating1);
+        assertThat(ratingDTOList.get(1)).isEqualToComparingFieldByField(rating);
 
     }
 

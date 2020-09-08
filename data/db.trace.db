@@ -1,0 +1,9 @@
+2020-09-08 13:38:32 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "RATING" not found; SQL statement:
+Select * from RATING [42102-196]
+2020-09-08 13:38:42 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "RATING" not found; SQL statement:
+Select * from rating [42102-196]
+2020-09-08 13:39:14 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * FROM INFORMATION_SCHEMA.TABLES INFORMATION_SCHEMA.[*]COLUMNS RATING "; SQL statement:
+Select * from INFORMATION_SCHEMA.TABLES INFORMATION_SCHEMA.COLUMNS rating [42000-196]

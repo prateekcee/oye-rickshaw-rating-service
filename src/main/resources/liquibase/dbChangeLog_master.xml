@@ -1,0 +1,24 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="oye-rickshaw-0809" author="Prateek">
+        <createTable tableName="rating">
+            <column name="id" type="VARCHAR(36)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rating" type="INT"/>
+            <column name="object_id" type="VARCHAR(36)"/>
+            <column name="rating_type" type="VARCHAR(20)"/>
+            <column name="created_by" type="VARCHAR(36)"/>
+            <column name="created_on" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="modified_by" type="VARCHAR(36)"/>
+            <column name="modified_on" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="version" type="INT"/>
+            <column name="ride_id" type="VARCHAR(36)"/>
+            <column name="rater_id" type="VARCHAR(36)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

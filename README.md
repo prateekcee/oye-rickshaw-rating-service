@@ -25,11 +25,11 @@ Approach :
                
 To run the application : Simply run this class : https://github.com/prateekcee/oye-rickshaw-rating-service/blob/master/src/main/java/com/example/oyerickshawratingservice/OyeRickshawRatingServiceApplication.java
 
-after that the application runs on port 8081 on you machine.
+after that the application runs on port 8081 on your machine.
 
 have added the postman request in the repo as well.
  
- here it is : https://github.com/prateekcee/oye-rickshaw-rating-service/blob/master/Rating%20Service.postman_collection.json
+here it is : https://github.com/prateekcee/oye-rickshaw-rating-service/blob/master/Rating%20Service.postman_collection.json
 
 
 
